@@ -47,7 +47,13 @@ tooltip {
     background-color: @red;
     padding: 0 8px;
 }
+#clock{
+    padding: 0 10px;
+}
 
+#memory
+#cpu
+#custom-keyboard,
 #bluetooth,
 #network,
 #battery,
@@ -59,6 +65,10 @@ tooltip {
     padding: 0 10px;
 }
 
+
+#memory:hover,
+#cpu:hover,
+#custom-keyboard:hover,
 #bluetooth:hover,
 #network:hover,
 #battery:hover,
@@ -66,6 +76,25 @@ tooltip {
 #language:hover,
 #clock:hover {
     background-color: alpha(@select, 0.6);
+}
+
+#memory{
+    color: @blue;
+    margin-right: 10px;
+}
+
+#cpu{
+    color: @green;
+    margin-right: 10px;
+}
+#cpu .icon{
+    letter-spacing: -2px;
+
+}
+
+#custom-keyboard{
+    color: @green;
+    margin-right: 20px;
 }
 
 #language{
