@@ -1,0 +1,20 @@
+[2025-10-23 16:30:05.697] [info] Using configuration file /home/rallidars/.config/waybar/config.jsonc
+[2025-10-23 16:30:05.701] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2025-10-23 16:30:05.701] [info] Using CSS file /home/rallidars/.config/waybar/style.css
+[2025-10-23 16:30:05.724] [info] Hyprland IPC starting
+[2025-10-23 16:30:05.725] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-10-23 16:30:05.728] [warning] unknown cursor option configured on module battery
+
+** (waybar:52629): WARNING **: 16:30:05.860: AT-SPI: Could not obtain desktop path or name
+
+
+** (waybar:52629): WARNING **: 16:30:05.865: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (waybar:52629): WARNING **: 16:30:05.877: atk-bridge: get_device_events_reply: unknown signature
+[2025-10-23 16:30:05.880] [info] Bar configured (width: 1536, height: 23) for output: eDP-1
+[2025-10-23 16:30:05.886] [warning] Requested height: 23 is less than the minimum height: 25 required by the modules
+[2025-10-23 16:30:05.886] [info] Bar configured (width: 1536, height: 25) for output: eDP-1
+[2025-10-23 16:30:05.961] [warning] Requested height: 25 is less than the minimum height: 27 required by the modules
+[2025-10-23 16:30:05.961] [info] Bar configured (width: 1536, height: 27) for output: eDP-1
+[2025-10-23 16:30:10.833] [info] Quitting.
+[2025-10-23 16:30:10.842] [info] Hyprland IPC stopping...

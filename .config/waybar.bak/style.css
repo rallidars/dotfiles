@@ -16,13 +16,12 @@ tooltip {
 }
 
 #waybar {
-    background: alpha(@background, 1);
+    background: alpha(@background, 0.6);
     border-radius: 0;
 }
 
 #workspaces {
     margin: 1px 0;
-    padding: 0 10px;
 }
 
 #workspaces button {
@@ -31,15 +30,15 @@ tooltip {
     padding: 0 5px;
 }
 #workspaces button:hover {
-    color: @orange;
+    color: @pink;
     transition: none;
-    border-bottom: 1px solid @orange;
+    border-bottom: 1px solid @pink;
     padding: 0 8px;
 }
 
 #workspaces button.active {
-    color: @orange;
-    border: 2px solid @orange;
+    color: @pink;
+    border: 2px solid @pink;
     padding: 0 8px;
     margin: 0 2px;
 }
@@ -47,6 +46,9 @@ tooltip {
 #workspaces button.urgent {
     background-color: @red;
     padding: 0 8px;
+}
+#clock{
+    padding: 0 10px;
 }
 
 #memory
@@ -101,7 +103,7 @@ tooltip {
 }
 
 #bluetooth {
-    color: @orange;
+    color: @yellow;
 }
 
 #network {
@@ -109,7 +111,7 @@ tooltip {
 }
 
 #battery {
-    color: @green;
+    color: @purple;
 }
 
 #pulseaudio {

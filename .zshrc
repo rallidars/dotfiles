@@ -73,7 +73,6 @@ zstyle ':completion:*' menu no
 alias ls='ls --color'
 alias vi='nvim'
 alias c='clear'
-alias cat='bat'
 alias get_idf='. $HOME/esp/esp-idf/export.sh'
 alias get_esp='. $HOME/export-esp.sh'
 
