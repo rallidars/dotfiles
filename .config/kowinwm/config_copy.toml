@@ -1,0 +1,53 @@
+workspaces = 4
+autostart = ["hypridle", "hyprpaper", "swaync"]
+
+[border]
+thickness = 2
+gap = 2
+active = 9125888
+inactive = 2763306
+
+[outputs.DP-1]
+resolution = [2560, 1440]
+refresh_rate = 60
+scale = 1.0
+possition = [0, 0]
+enabled = true
+
+
+[keymaps]
+# default
+"Super+Shift+esc" = { action = "exit" }
+"Super+c" = { action = "killactive" }
+"Super+r" = { action = "reloadconfig" }
+"Super+f" = { action = "fullscreen" }
+"Super+1" = { action = "workspace", index = 1 }
+"Super+2" = { action = "workspace", index = 2 }
+"Super+3" = { action = "workspace", index = 3 }
+"Super+4" = { action = "workspace", index = 4 }
+"ctrl+alt+1" = { action = "movetoworkspace", index = 1 }
+"ctrl+alt+2" = { action = "movetoworkspace", index = 2 }
+"ctrl+alt+3" = { action = "movetoworkspace", index = 3 }
+"ctrl+alt+4" = { action = "movetoworkspace", index = 4 }
+"Super+l" = { action = "movefocus", direction = "right" }
+"Super+h" = { action = "movefocus", direction = "left" }
+"Super+k" = { action = "movefocus", direction = "top" }
+"Super+j" = { action = "movefocus", direction = "down" }
+"ctrl+alt+l" = { action = "movewindow", direction = "right" }
+"ctrl+alt+h" = { action = "movewindow", direction = "left" }
+"ctrl+alt+k" = { action = "movewindow", direction = "top" }
+"ctrl+alt+j" = { action = "movewindow", direction = "down" }
+
+### Custom keymaps
+"Super+q" = { action = "exec", command = "kitty" }
+"Super+Tab" = { action = "exec", command = "rofi -show drun" }
+
+"volumeup" = {action = "exec", command = "pactl -- set-sink-volume 0 +10%"}
+"volumedown" = {action = "exec", command = "pactl -- set-sink-volume 0 -10%"}
+"mute" = {action = "exec", command = "pactl -- set-sink-mute 0 toggle"}
+
+"brightnessup" = {action = "exec", command = "brightnessctl set +5%"}
+"brightnessdown" = {action = "exec", command = "brightnessctl set 5%-"}
+
+
+
