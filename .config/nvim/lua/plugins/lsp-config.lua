@@ -60,7 +60,7 @@ return {
       })
       lspconfig.html.setup({
         capabilities = capabilities,
-        filetypes = { "html", "rs", "rust" },
+        filetypes = { "html" },
       })
       lspconfig.bashls.setup({
         capabilities = capabilities,

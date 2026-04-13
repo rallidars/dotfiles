@@ -90,12 +90,11 @@ export default function Applauncher() {
             {(app, index) => (
               <button onClicked={() => launch(app)}>
                 <box>
-                  <image iconName={app.iconName} />
                   <label label={app.name} maxWidthChars={40} wrap />
                   <label
                     hexpand
                     halign={Gtk.Align.END}
-                    label={index((i) => `󰘳${i + 1}`)}
+                    label={index((i) => `${i + 1}`)}
                   />
                 </box>
               </button>

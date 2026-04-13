@@ -1,17 +1,18 @@
 workspaces = 4
-autostart = ['ags run &', 'hyprpaper', 'hypridle']
+autostart = ['hypridle', 'hyprpaper', 'ags run &']
 
 [keyboard]
 layouts = ["us", "ua"]
 
 [border]
-thickness = 2
+thickness = 4
 gap = 2
 active = "#FFA500"
+end_active = "#006400"
 inactive = "#7A7A7A"
 
-[outputs.DP-1]
-resolution = [2560, 1440]
+[outputs.eDP-1]
+resolution = [1920, 1280]
 refresh_rate = 60
 scale = 1.0
 possition = [0, 0]
@@ -20,42 +21,52 @@ enabled = true
 
 [keymaps]
 # default
-"Super+Shift+esc" = { action = "exit" }
+"Super+Shift+Escape" = { action = "exit" }
 "Super+c" = { action = "killactive" }
 "Super+space" = { action = "switchlayout" }
 "ctrl+alt+f" = { action = "floatingwindow" }
 "Super+r" = { action = "reloadconfig" }
+"Super+o" = { action = "resizewindowmouse" }
 "Super+f" = { action = "fullscreen" }
+"Super+y" = { action = "togglelayout" }
+
 "Super+1" = { action = "workspace", index = 1 }
 "Super+2" = { action = "workspace", index = 2 }
 "Super+3" = { action = "workspace", index = 3 }
 "Super+4" = { action = "workspace", index = 4 }
+
 "ctrl+alt+1" = { action = "movetoworkspace", index = 1 }
 "ctrl+alt+2" = { action = "movetoworkspace", index = 2 }
 "ctrl+alt+3" = { action = "movetoworkspace", index = 3 }
 "ctrl+alt+4" = { action = "movetoworkspace", index = 4 }
+
 "Super+l" = { action = "movefocus", direction = "right" }
 "Super+h" = { action = "movefocus", direction = "left" }
 "Super+k" = { action = "movefocus", direction = "top" }
 "Super+j" = { action = "movefocus", direction = "down" }
+
 "ctrl+alt+l" = { action = "movewindow", direction = "right" }
 "ctrl+alt+h" = { action = "movewindow", direction = "left" }
 "ctrl+alt+k" = { action = "movewindow", direction = "top" }
 "ctrl+alt+j" = { action = "movewindow", direction = "down" }
 
+"Super+Page_Down" = { action = "prevworkspace" }
+"Super+Page_Up" = { action = "nextworkspace" }
+
+"Super+alt+l" = { action = "resizeactive", direction = "right", step = 10 }
+"Super+alt+h" = { action = "resizeactive", direction = "left", step = 10 }
+"Super+alt+k" = { action = "resizeactive", direction = "top", step = 10 }
+"Super+alt+j" = { action = "resizeactive", direction = "down", step= 10 }
+
 "Super+t" = { action = "movewindowmouse" }
 
 ### Custom keymaps
 "Super+q" = { action = "exec", command = "kitty" }
-"Super+Tab" = { action = "exec", command = "rofi -show drun" }
-"Super+n" = { action = "exec", command = "ags toggle launcher" }
+"Super+Tab" = { action = "exec", command = "ags toggle launcher" }
 
-"volumeup" = {action = "exec", command = "pactl -- set-sink-volume 0 +10%"}
-"volumedown" = {action = "exec", command = "pactl -- set-sink-volume 0 -10%"}
-"mute" = {action = "exec", command = "pactl -- set-sink-mute 0 toggle"}
+"XF86AudioRaiseVolume" = {action = "exec", command = "pactl -- set-sink-volume 0 +10%"}
+"XF86AudioLowerVolume" = {action = "exec", command = "pactl -- set-sink-volume 0 -10%"}
+"XF86AudioMute" = {action = "exec", command = "pactl -- set-sink-mute 0 toggle"}
 
-"brightnessup" = {action = "exec", command = "brightnessctl set +5%"}
-"brightnessdown" = {action = "exec", command = "brightnessctl set 5%-"}
-
-
-
+"XF86MonBrightnessUp" = {action = "exec", command = "brightnessctl set +5%"}
+"XF86MonBrightnessDown" = {action = "exec", command = "brightnessctl set 5%-"}

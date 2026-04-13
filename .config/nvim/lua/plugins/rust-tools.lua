@@ -3,11 +3,6 @@ return {
     "simrat39/rust-tools.nvim",
     ft = "rust",
     dependencies = "neovim/nvim-lspconfig",
-            cargo = {
-              extraEnv = {
-                RUSTFLAGS = "--cfg=web_sys_unstable_apis",
-              },
-          },
     opts = {
       server = {
         on_attach = require("plugins.lsp-config").on_attach,
